@@ -1,0 +1,147 @@
+footer{
+    background: #000000;
+    opacity: 0.9;
+    color: #FFFFFF;
+    padding: 30px 5% 50px 8%;
+    font-size: 0.857rem;        
+}
+
+.footer-heading{
+    font-size: 1rem;
+    margin: 0 0 25px;
+}
+footer > div {
+    vertical-align: top;
+    display: inline-block;
+}
+.contact-us{
+    width: 30%;
+    padding: 0 40px 0 0;
+}
+
+.contact-us li{
+    list-style: none;
+    padding: 0 0 15px 30px;
+    position: relative;
+}
+
+.contact-us ul{
+    position: relative;
+}
+
+.contact-us li:before{
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    font-family: FontAwesome;
+}
+
+.contact-us li.address:before{
+    content: "\f278";
+}
+
+.contact-us li.mobile:before{
+    content: "\f095";
+    color: #FFFFFF;
+    font-size: 0.929rem;
+}
+
+.contact-us li.email:before{
+    content: "\f003";
+}
+
+
+.contact-us .social-icons{
+    padding: 25px 0;
+    position: relative;
+}
+
+.social-icons a{
+    font-family: FontAwesome;
+    font-size: 28px;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.9;
+    padding: 5px 10px 5px 3px;
+    width: 45px;
+    height: 40px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.social-icons a.whatsapp:hover{
+    color: #25d366;
+    transition: all 0.2s cubic-bezier(0.18, 0.72, 0.29, 0.99);
+}
+
+.social-icons a.facebook:hover{
+    color: #3b5998;
+    transition: all 0.2s cubic-bezier(0.18, 0.72, 0.29, 0.99);
+}
+
+.social-icons a.twitter:hover{
+    color: #00aced;
+    transition: all 0.2s cubic-bezier(0.18, 0.72, 0.29, 0.99);
+}
+
+.social-icons a.youtube:hover{
+    color: #bb0000;
+    transition: all 0.2s cubic-bezier(0.18, 0.72, 0.29, 0.99);
+}
+
+.locate-us{
+    width: 38%;
+    padding: 0 20px 0 0;
+}
+
+agm-map{
+    height: 230px;
+}
+
+.write-us{
+    width: 30%;
+    padding: 0 0 0 40px;
+}
+
+.write-us .row {
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 0; /* hack to remove space between inline block elements */
+}
+
+.write-us .row > *{
+    font-size: 1rem;/* hack to remove space between inline block elements */
+}
+
+.write-us label {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.write-us input,
+.write-us textarea {
+    display: inline-block;
+    width: 70%;
+}
+
+.write-us input{
+    height: 21px;
+}
+
+.write-us textarea{
+    resize: none;
+}
+
+.submit-btn{
+    float: right;
+    width: 70%;
+    padding: 7px;
+    background-color: #062F4F;
+    outline: 0;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 0;
+    font-weight: bold;
+    cursor: pointer;
+}

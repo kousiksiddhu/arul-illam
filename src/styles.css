@@ -2,9 +2,92 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 14px;
     font-family: 'Open Sans';
+}
+
+/* 
+--------------------------------------------------------------------------------------------------------
+COLORS 
+--------------------------------------------------------------------------------------------------------
+*/
+
+.color-black{
+    color: #000000;
+}
+
+.color-white{
+    color: #FFFFFF;
+}
+
+.color-ink{
+    color: #062F4F;
+}
+
+.color-posy{
+    color: #813772;
+}
+
+.color-ember{
+    color: #B82601;
+}
+
+.color-green{
+    color: #00897b;
+}
+
+/* 
+--------------------------------------------------------------------------------------------------------
+COMMON STYLE ANIMATIONS 
+--------------------------------------------------------------------------------------------------------
+*/
+
+.btm-top-animation{
+    position: relative;
+    z-index: 1;
+}
+
+.btm-top-animation:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: bottom center;
+    z-index: -1;
+    transition: transform 0.3s;
+}
+
+.btm-top-animation:hover::after {
+    transform: scaleY(1);
+}
+
+.after-color-black:after{
+    background-color: #000000;
+}
+
+.after-color-white:after{
+    background-color: #FFFFFF;
+}
+
+.after-color-ink:after{
+    background-color: #062F4F;
+}
+
+.after-color-posy:after{
+    background-color: #813772;
+}
+
+.after-color-ember:after{
+    background-color: #B82601;
+}
+
+.after-color-green:after{
+    background-color: #00897b;
 }

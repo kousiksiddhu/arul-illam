@@ -1,3 +1,56 @@
-<p>
-  footer works!
-</p>
+<footer>
+  <div class="contact-us">
+    <h3 class="footer-heading">Contact Us</h3>
+    <ul>
+        <li class="address">
+          <address>
+            6050 Birch Drive, <br>  <!-- Dynamic contents -->
+            Filnt, <br>
+            Michigan, <br>
+            United States - 48507.
+          </address>
+        </li>
+        <li class="mobile">
+          (503) 61-6783       <!-- Dynamic contents -->
+        </li>
+        <li class="email">
+          thambi_illam@gmail.com      <!-- Dynamic contents -->
+        </li>
+        <li class="social-icons">
+          <a href="#" class="fa-whatsapp whatsapp"></a>  
+          <a href="#" class="fa-facebook-square facebook"></a>  
+          <a href="#" class="fa-twitter twitter"></a>  
+          <a href="#" class="fa-youtube-play youtube"></a>  
+        </li>      
+    </ul>
+  </div>
+  <div class="locate-us">
+    <agm-map [latitude]="lat" [longitude]="lng">
+      <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+    </agm-map>
+  </div>
+  <div class="write-us">
+    <h3 class="footer-heading">Leave us a Message</h3>
+    <form action="#">
+      <div class="row">
+          <label for="feedbackName">Name</label>
+          <input type="text" id="feedbackName" name="Name" maxlength="20" size="35"/>
+      </div>
+      <div class="row">
+          <label for="feedbackEmail">Email</label>
+          <input type="email" id="feedbackEmail" name="Email" maxlength="20" size="35"/>
+      </div>
+      <div class="row">
+          <label for="feedbackTelephone">Telephone</label>
+          <input type="number" id="feedbackTelephone" name="Telephone" maxlength="20" size="35"/>
+      </div>
+      <div class="row">
+          <label for="feedbackComments">Comments</label>
+          <textarea id="feedbackComments" name="Comments" rows="6" cols="50"></textarea>
+      </div>
+      <div class="row">
+          <button id="feedbackSubmit" class="submit-btn btm-top-animation after-color-ember">Send Message</button>
+      </div>
+    </form>
+  </div>
+</footer>

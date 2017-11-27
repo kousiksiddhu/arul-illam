@@ -1,3 +1,4 @@
+import { AgmCoreModule } from '@agm/core';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 import { RouteRoutingModule } from './page-router/page-router.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -27,7 +28,11 @@ import { DonateComponent } from './donate/donate.component';
     BrowserModule,
     FormsModule,
     HttpModule,
-    RouteRoutingModule
+    RouteRoutingModule,
+    AngularFontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDFnMpdA4OLqQODHCQ1Bk4Rrvcu3ATZWTE'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

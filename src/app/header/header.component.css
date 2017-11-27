@@ -1,6 +1,8 @@
 .menu {
     text-align: center;
-    background: rgba(245, 245, 245, 0.9);
+    background-color: #000000;
+    color: #FFFFFF;
+    opacity: 0.9;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
     position: sticky;
     top: 0;
@@ -13,17 +15,10 @@
     list-style: none;
 }
 
-.menu li:hover {
-    background: #757575;
-}
-
 .menu li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #757575;
+    opacity: 0.9;
+    color: #FFFFFF;
 }
 
-.menu li:hover a {
-    color: #EEEEEE;
-    transition: 0.2s;
-}
